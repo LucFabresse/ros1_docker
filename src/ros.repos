@@ -1,0 +1,10 @@
+# List of repositories to use within your workspace
+# See https://github.com/dirk-thomas/vcstool
+
+# vcs import < ros.repos
+
+repositories:
+  urdf_sim_tutorial:
+    type: git
+    url: https://github.com/ros/urdf_sim_tutorial.git
+    version: master
