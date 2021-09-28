@@ -20,8 +20,17 @@ ENV QT_X11_NO_MITSHM 1
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
    && apt-get -y install ros-melodic-desktop-full \
+   ros-melodic-kobuki-driver \
+   ros-melodic-gmapping \
+   ros-melodic-dwa-local-planner \
    ros-melodic-ros-control \
    ros-melodic-ros-controllers \
+   ros-melodic-pid \
+   ros-melodic-urg-node \
+   ros-melodic-joy-* \
+   ros-melodic-laser-* \
+   ros-melodic-ecl-* \
+   ros-melodic-yocs-controllers \
    ros-melodic-joint-state-controller \
    ros-melodic-move-base \
    ros-melodic-pr2-move-base \

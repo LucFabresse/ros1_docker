@@ -1,4 +1,6 @@
+devel/*
 build/*
 install/*
 log/*
 site/*
+src/*
