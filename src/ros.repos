@@ -4,7 +4,11 @@
 # vcs import < ros.repos
 
 repositories:
-  urdf_sim_tutorial:
+#  urdf_sim_tutorial:
+#    type: git
+#    url: https://github.com/ros/urdf_sim_tutorial.git
+#    version: master
+  larm_turtlebot2:
     type: git
-    url: https://github.com/ros/urdf_sim_tutorial.git
-    version: master
+    url: https://github.com/ceri-num/LARM-RDS-Simulation-WS
+    version: melodic

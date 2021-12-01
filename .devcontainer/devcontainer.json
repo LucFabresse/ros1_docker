@@ -17,28 +17,28 @@
 		,"--volume=/dev/input:/dev/input"
 		,"--privileged"
 	],
-	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
-	// Set *default* container specific settings.json values on container create.
 	"settings": {
+		"terminal.integrated.shell.*": "/bin/bash -l",
 		"terminal.integrated.profiles.linux": {
 			"bash": {
-				"path": "bash"
+				"path": "/bin/bash -l"
 			},
 		},
 		"terminal.integrated.defaultProfile.linux": "bash"
 	},
+	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
 	"extensions": [
-		"dotjoshjohnson.xml",
-		"zachflower.uncrustify",
-		"ms-azuretools.vscode-docker",
-		"ms-iot.vscode-ros",
+	// 	"dotjoshjohnson.xml",
+	// 	"zachflower.uncrustify",
+	// 	"ms-azuretools.vscode-docker",
 		"ms-python.python",
-		"ms-vscode.cpptools",
+		"ms-iot.vscode-ros",
+	// 	"ms-vscode.cpptools",
 		"redhat.vscode-yaml",
-		"smilerobotics.urdf",
-		"streetsidesoftware.code-spell-checker",
-		"twxs.cmake",
-		"yzhang.markdown-all-in-one",
+	// 	"smilerobotics.urdf",
+	// 	"streetsidesoftware.code-spell-checker",
+	// 	"twxs.cmake",
+	// 	"yzhang.markdown-all-in-one",
 		"tomoki1207.pdf"
 	]
 }
